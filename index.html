@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Restaurante Maraô — Guia de Vinhos & Espumantes</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="bubs" aria-hidden="true">
+      <div class="bub"></div>
+      <div class="bub"></div>
+      <div class="bub"></div>
+    </div>
+    <p class="hero-label">Restaurante Maraô</p>
+    <h1>Vinhos &amp; <em>Espumantes</em></h1>
+    <p class="hero-sub">Conceitos · Carta Completa · Harmonização · Flashcards · Quiz</p>
+  </header>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="#conceitos">Conceitos</a>
+        <a href="#espumantes">Espumantes</a>
+        <a href="#brancos">Brancos</a>
+        <a href="#tintos">Tintos</a>
+        <a href="#roses">Rosés</a>
+        <a href="#harmonizacao">Harmonização</a>
+        <a href="#uvas">Uvas</a>
+        <a href="#flashcards">Flashcards</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#resumo">Resumo</a>
+      </div>
+      <button class="ham-btn" id="hamBtn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-drawer" id="navDrawer">
+      <a href="#conceitos" class="drawer-link"><span class="nav-num">01</span> Conceitos</a>
+      <a href="#espumantes" class="drawer-link"><span class="nav-num">02</span> Espumantes</a>
+      <a href="#brancos" class="drawer-link"><span class="nav-num">03</span> Brancos</a>
+      <a href="#tintos" class="drawer-link"><span class="nav-num">04</span> Tintos</a>
+      <a href="#roses" class="drawer-link"><span class="nav-num">05</span> Rosés</a>
+      <a href="#harmonizacao" class="drawer-link"><span class="nav-num">06</span> Harmonização</a>
+      <a href="#uvas" class="drawer-link"><span class="nav-num">07</span> Uvas</a>
+      <a href="#flashcards" class="drawer-link"><span class="nav-num">08</span> Flashcards</a>
+      <a href="#quiz" class="drawer-link"><span class="nav-num">09</span> Quiz</a>
+      <a href="#resumo" class="drawer-link"><span class="nav-num">10</span> Resumo</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- 01 CONCEITOS -->
+    <section id="conceitos">
+      <div class="sh"><span class="sh-num">01</span>
+        <h2>Conceitos Básicos</h2>
+      </div>
+      <div class="gc" id="gc"></div>
+    </section>
+
+    <!-- 02 ESPUMANTES -->
+    <section id="espumantes">
+      <div class="sh"><span class="sh-num">02</span>
+        <h2>Espumantes do Cardápio</h2>
+      </div>
+      <div class="filtros" id="filtros-esp"></div>
+      <div class="gw" id="ge"></div>
+    </section>
+
+    <!-- 03 VINHOS BRANCOS -->
+    <section id="brancos">
+      <div class="sh"><span class="sh-num">03</span>
+        <h2>Vinhos Brancos</h2>
+      </div>
+      <div class="filtros" id="filtros-bra"></div>
+      <div id="brancos-container"></div>
+    </section>
+
+    <!-- 04 VINHOS TINTOS -->
+    <section id="tintos">
+      <div class="sh"><span class="sh-num">04</span>
+        <h2>Vinhos Tintos</h2>
+      </div>
+      <div class="filtros" id="filtros-tin"></div>
+      <div id="tintos-container"></div>
+    </section>
+
+    <!-- 05 ROSÉS -->
+    <section id="roses">
+      <div class="sh"><span class="sh-num">05</span>
+        <h2>Rosés do Cardápio</h2>
+      </div>
+      <div class="gw" id="gr"></div>
+    </section>
+
+    <!-- 06 HARMONIZAÇÃO -->
+    <section id="harmonizacao">
+      <div class="sh"><span class="sh-num">06</span>
+        <h2>Harmonização Rápida</h2>
+      </div>
+      <p class="tw-hint">← deslize para ver mais →</p>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Bebida / Uva</th>
+              <th>Harmoniza com</th>
+              <th>Dica extra</th>
+            </tr>
+          </thead>
+          <tbody id="th"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 07 UVAS & PAÍSES -->
+    <section id="uvas">
+      <div class="sh"><span class="sh-num">07</span>
+        <h2>Uvas &amp; Países</h2>
+      </div>
+      <p class="tw-hint">← deslize para ver mais →</p>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Uva</th>
+              <th>Tipo</th>
+              <th>Perfil</th>
+              <th>Países</th>
+            </tr>
+          </thead>
+          <tbody id="tu"></tbody>
+        </table>
+      </div>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>País / Região</th>
+              <th>Destaque nos vinhos</th>
+            </tr>
+          </thead>
+          <tbody id="tp"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 08 FLASHCARDS -->
+    <section id="flashcards">
+      <div class="sh"><span class="sh-num">08</span>
+        <h2>Flashcards</h2>
+      </div>
+      <p class="fhint">Toque ou clique para revelar a resposta</p>
+      <div class="gf" id="gfl"></div>
+    </section>
+
+    <!-- 09 QUIZ -->
+    <section id="quiz">
+      <div class="sh"><span class="sh-num">09</span>
+        <h2>Quiz de Fixação</h2>
+      </div>
+      <div class="qw">
+        <div class="ql" id="ql">PERGUNTA 1 / 12</div>
+        <div class="qprog">
+          <div class="qbar" id="qbar" style="width:0%"></div>
+        </div>
+        <div class="qq" id="qq"></div>
+        <div class="qopts" id="qopts"></div>
+        <div class="qfb" id="qfb"></div>
+        <div class="qnav">
+          <button class="bnext" id="qnext" style="display:none">Próxima →</button>
+          <span class="qsc" id="qsc"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 RESUMO -->
+    <section id="resumo">
+      <div class="sh"><span class="sh-num">10</span>
+        <h2>Resumo Ultra Rápido</h2>
+      </div>
+      <div class="resumo-grid" id="gr2"></div>
+    </section>
+
+  </main>
+  <footer>Restaurante Maraô — Guia de Vinhos &amp; Espumantes</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
